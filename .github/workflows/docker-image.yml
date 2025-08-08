@@ -21,7 +21,7 @@ jobs:
 
     - name: Build and Push Docker Image
       run: |
-        IMAGE_NAME="${{ secrets.DOCKERHUB_USERNAME }}/testimage1"
+        IMAGE_NAME="${{ secrets.DOCKERHUB_USERNAME }}/golanka-travels"
         TAG="latest"
         docker build -t $IMAGE_NAME:$TAG .
         docker push $IMAGE_NAME:$TAG
